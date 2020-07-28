@@ -16,6 +16,9 @@ public class CitiesListscreen
 	 WebElement addbutton;
 	 @FindBy(xpath="//*[@id='bizgaze_body']/div[8]/div")
 	 WebElement successMsg;
+	
+	@FindBy(xpath="//strong[text()='vs383']")
+	WebElement listscreenRecord;
 	 public void clickOnAddButton()
 	 {
 		 addbutton.click();
@@ -24,4 +27,9 @@ public class CitiesListscreen
 	 {
 		 return successMsg.getText();
 	 }
+	
+	public void clickonlistscreenRecord()
+	{
+             listscreenRecord.click();
+	}
 }
