@@ -2,8 +2,8 @@ Feature: Login
  @sanity   
 Scenario: successful login with valid credentials
      Given user launch chrome browser
-    When user opens URL "https://testv3.bizgaze.com/"
-    And user enters Email as "8500665284" and Password as "123456"
+    When user opens URL "www.fb.com"
+    And user enters Email as "123456" and Password as "123456"
     And click on login 
     Given user click on Cities module link 
     And user click on add button 
